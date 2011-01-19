@@ -1,0 +1,7 @@
+#Options SymLinksIfOwnerMatch FollowSymLinks  MultiViews -Indexes
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !^.*/\.thumbs/.*$
+#RewriteCond %{REQUEST_FILENAME} !^.*/\.watermarks/.*$
+#RewriteRule .*\.(jpg|jpeg|png|gif)$  -  [F]
+
+RewriteRule gallery(/(.*)|/|$) index.php?$2
